@@ -5,6 +5,10 @@
         --cor-bordaheader: #f80000;
         --fonte-texto: Arial, sans-serif;
     }
+*{
+    transition: background-color 0.3s ease;
+}
+
     .tema-escuro{
          --cor-primaria: rgb(190, 201, 197);
         --cor-texto:  rgb(247, 254, 252);
@@ -50,8 +54,7 @@
 
  article {
      display: flex;
-
-     border: 1px solid rgb(11, 224, 171);
+box-shadow: 2px 2px 20px rgb(0, 0, 0, 0.3);
 margin: 16px;
 gap: 16px;
 padding: 16px;
@@ -70,6 +73,10 @@ justify-content: center;
 
  .artigo-autor {
      font-weight: bold;
+ }
+
+ .tema-escuro .btn-tema-escuro{
+    background-color: var(--cor-textoheader-e-fundo-main);
  }
 
  .btn-tema-escuro{
